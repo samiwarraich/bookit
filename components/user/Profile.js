@@ -96,7 +96,6 @@ const Profile = () => {
                     id="name_field"
                     className="form-control"
                     name="name"
-                    //defaultValue={name}
                     value={name}
                     onChange={onChange}
                   />
@@ -135,6 +134,8 @@ const Profile = () => {
                           src={avatarPreview}
                           className="rounded-circle"
                           alt="image"
+                          width={80}
+                          height={80}
                         />
                       </figure>
                     </div>

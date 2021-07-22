@@ -25,11 +25,16 @@ const Header = () => {
         <div className="col-3 p-0">
           <div className="navbar-brand">
             <Link href="/" passHref>
-              <Image
-                style={{ cursor: "pointer" }}
-                src="/images/bookit_logo.png"
-                alt="BookIT"
-              />
+              <a>
+                <Image
+                  style={{ cursor: "pointer" }}
+                  src="/images/bookit_logo.png"
+                  alt="BookIT"
+                  width={145}
+                  height={33}
+                  //alt=""
+                />
+              </a>
             </Link>
           </div>
         </div>
@@ -43,12 +48,19 @@ const Header = () => {
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                }}
               >
                 <figure className="avatar avatar-nav">
                   <Image
                     src={user?.avatar?.url}
                     alt={user?.name}
                     className="rounded-circle"
+                    //alt=""
+                    width={40}
+                    height={40}
                   />
                 </figure>
                 <span>{user?.name}</span>
