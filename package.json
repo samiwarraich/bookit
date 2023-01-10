@@ -14,7 +14,7 @@
     "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "cloudinary": "^1.26.1",
-    "easyinvoice": "^1.0.144",
+    "easyinvoice": "^2.3.3",
     "mdbreact": "^5.0.2",
     "moment": "^2.29.1",
     "moment-range": "^4.0.2",
