@@ -29,10 +29,9 @@ const Header = () => {
                 <Image
                   style={{ cursor: "pointer" }}
                   src="/images/bookit_logo.png"
-                  alt="BookIT"
+                  alt="book it."
                   width={145}
                   height={33}
-                  //alt=""
                 />
               </a>
             </Link>
@@ -41,9 +40,9 @@ const Header = () => {
 
         <div className="col-3 mt-3 mt-md-0 text-center">
           {user ? (
-            <div className="ml-4 dropdown d-line">
+            <div className="dropdown">
               <a
-                className="btn dropdown-toggle mr-4"
+                className="btn dropdown-toggle"
                 id="dropDownMenuButton"
                 data-toggle="dropdown"
                 aria-haspopup="true"
@@ -58,7 +57,6 @@ const Header = () => {
                     src={user?.avatar?.url}
                     alt={user?.name}
                     className="rounded-circle"
-                    //alt=""
                     width={40}
                     height={40}
                   />

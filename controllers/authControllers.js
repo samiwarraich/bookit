@@ -89,7 +89,7 @@ const forgotPassword = catchAsyncErrors(async (req, res, next) => {
   try {
     await sendEmail({
       email: user.email,
-      subject: "BookIT Password Recovery",
+      subject: "book it. Password Recovery",
       message,
     });
 

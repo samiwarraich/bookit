@@ -9,7 +9,10 @@ const RoomItem = ({ room }) => {
     <div className="col-sm-12 col-md-6 col-lg-3 my-3">
       <div className="card p-2">
         <Image
-          className="card-img-top mx-auto"
+          onClick={() => {
+            router.push(`/room/${room._id}`);
+          }}
+          className="card-img-top mx-auto btn"
           src={room.images[0].url}
           alt=""
           height={170}
@@ -43,7 +46,6 @@ const RoomItem = ({ room }) => {
             }}
           >
             View Details
-            {/* <Link href={`/room/${room._id}`}>View Details</Link> */}
           </button>
         </div>
       </div>
