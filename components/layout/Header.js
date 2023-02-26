@@ -38,7 +38,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="col-3 mt-3 mt-md-0 text-center">
+        <div className="col-3 mt-3 mt-md-0 text-center d-flex flex-row-reverse">
           {user ? (
             <div className="dropdown">
               <a
