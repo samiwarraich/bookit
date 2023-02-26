@@ -3346,12 +3346,12 @@ next-auth@^3.27.0:
     preact-render-to-string "^5.1.14"
     querystring "^0.2.0"
 
-next-connect@^0.13.0:
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/next-connect/-/next-connect-0.13.0.tgz#dff835d2f5eab1f65503dae747dfef23c43020f0"
-  integrity sha512-f2G4edY01XomjCECSrgOpb/zzQinJO6Whd8Zds0+rLUYhj5cLwkh6FVvZsQCSSbxSc4k9nCwNuk5NLIhvO1gUA==
+next-connect@^0.10.1:
+  version "0.10.2"
+  resolved "https://registry.yarnpkg.com/next-connect/-/next-connect-0.10.2.tgz#b361cffe1ce0aae46f7b3c91de2871d0ab40d0f6"
+  integrity sha512-Tp9PA5YSg6aStF9TP+VmaQwvPH0tlO8VxzFP/oizD60aZwyqfK302J12V0VMlWnWJEQW5IPrblynI4bG193zwA==
   dependencies:
-    trouter "^3.2.0"
+    trouter "^3.1.0"
 
 next-redux-wrapper@^8.1.0:
   version "8.1.0"
@@ -5009,7 +5009,7 @@ tr46@^1.0.1:
   dependencies:
     punycode "^2.1.0"
 
-trouter@^3.2.0:
+trouter@^3.1.0:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/trouter/-/trouter-3.2.1.tgz#a07e6f39a48fa0950a0157897075b633265b0fd9"
   integrity sha512-oY3CmIiEYOe1YMEzh++I67lrNOUldtCeuLL0vRPydvQLHZpSJ03B5dgDFlpFsiriMq6e//NDjjopjUzXOztHow==
