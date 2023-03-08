@@ -18,7 +18,6 @@ module.exports = {
     SMTP_FROM_NAME: process.env.SMTP_FROM_NAME,
     SMTP_FROM_EMAIL: process.env.SMTP_FROM_EMAIL,
 
-    // NEXTAUTH_URL: process.env.NEXTAUTH_URL,
     NEXTAUTH_URL: process.env.NEXTAUTH_URL,
   },
   images: {
