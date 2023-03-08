@@ -24,7 +24,7 @@
     "next": "^13.2.3",
     "next-absolute-url": "^1.2.2",
     "next-auth": "^3.27.0",
-    "next-connect": "^0.10.1",
+    "next-connect": "^0.13.0",
     "next-redux-wrapper": "^6.0.2",
     "nodemailer": "^6.6.2",
     "raw-body": "^2.5.2",
