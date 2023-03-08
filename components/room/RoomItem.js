@@ -20,9 +20,7 @@ const RoomItem = ({ room }) => {
         />
         <div className="card-body d-flex flex-column">
           <h5 className="card-title">
-            <Link href={`/room/${room._id}`}>
-              <a>{room.name}</a>
-            </Link>
+            <Link href={`/room/${room._id}`}>{room.name}</Link>
           </h5>
 
           <div className="ratings mt-auto mb-3">

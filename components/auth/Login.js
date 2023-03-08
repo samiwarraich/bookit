@@ -52,8 +52,8 @@ const Login = () => {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-            <Link href="/password/forgot">
-              <a className="float-right mb-2">Forgot Password?</a>
+            <Link href="/password/forgot" className="float-right mb-2">
+              Forgot Password?
             </Link>
             <button
               id="login_button"
@@ -64,8 +64,8 @@ const Login = () => {
               {loading ? <ButtonLoader /> : "LOGIN"}
             </button>
 
-            <Link href="/register">
-              <a className="float-right mt-2">New User?</a>
+            <Link href="/register" className="float-right mt-2">
+              New User?
             </Link>
           </form>
         </div>

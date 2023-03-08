@@ -58,10 +58,11 @@ const AllUsers = () => {
           role: user.role,
           actions: (
             <>
-              <Link href={`/admin/users/${user._id}`}>
-                <a className="btn btn-primary">
-                  <i className="fa fa-pencil"></i>
-                </a>
+              <Link
+                href={`/admin/users/${user._id}`}
+                className="btn btn-primary"
+              >
+                <i className="fa fa-pencil"></i>
               </Link>
               <button
                 className="btn btn-danger mx-2"

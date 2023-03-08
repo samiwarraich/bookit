@@ -58,10 +58,11 @@ const AllBookings = () => {
           amount: `$${booking.amountPaid}`,
           actions: (
             <>
-              <Link href={`/admin/bookings/${booking._id}`}>
-                <a className="btn btn-primary">
-                  <i className="fa fa-eye"></i>
-                </a>
+              <Link
+                href={`/admin/bookings/${booking._id}`}
+                className="btn btn-primary"
+              >
+                <i className="fa fa-eye"></i>
               </Link>
               <button
                 className="btn btn-success mx-2"

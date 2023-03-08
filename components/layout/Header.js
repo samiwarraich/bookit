@@ -25,15 +25,13 @@ const Header = () => {
         <div className="col-3 p-0">
           <div className="navbar-brand">
             <Link href="/" passHref>
-              <a>
-                <Image
-                  style={{ cursor: "pointer" }}
-                  src="/images/bookit_logo.png"
-                  alt="book it."
-                  width={145}
-                  height={33}
-                />
-              </a>
+              <Image
+                style={{ cursor: "pointer" }}
+                src="/images/bookit_logo.png"
+                alt="book it."
+                width={145}
+                height={33}
+              />
             </Link>
           </div>
         </div>
@@ -69,47 +67,44 @@ const Header = () => {
               >
                 {user.role === "admin" && (
                   <>
-                    <Link href="/admin/rooms">
-                      <a className="dropdown-item">Rooms</a>
+                    <Link href="/admin/rooms" className="dropdown-item">
+                      Rooms
                     </Link>
-
-                    <Link href="/admin/bookings">
-                      <a className="dropdown-item">Bookings</a>
+                    <Link href="/admin/bookings" className="dropdown-item">
+                      Bookings
                     </Link>
-
-                    <Link href="/admin/users">
-                      <a className="dropdown-item">Users</a>
+                    <Link href="/admin/users" className="dropdown-item">
+                      Users
                     </Link>
-                    <Link href="/admin/reviews">
-                      <a className="dropdown-item">Reviews</a>
+                    <Link href="/admin/reviews" className="dropdown-item">
+                      Reviews
                     </Link>
                     <hr />
                   </>
                 )}
-                <Link href="/bookings/me">
-                  <a className="dropdown-item">My Bookings</a>
+                <Link href="/bookings/me" className="dropdown-item">
+                  My Bookings
                 </Link>
 
-                <Link href="/me/update">
-                  <a className="dropdown-item">Profile</a>
+                <Link href="/me/update" className="dropdown-item">
+                  Profile
                 </Link>
-
-                <Link href="/">
-                  <a
-                    className="dropdown-item text-danger"
-                    onClick={logoutHandler}
-                  >
-                    Logout
-                  </a>
+                <Link
+                  href="/"
+                  className="dropdown-item text-danger"
+                  onClick={logoutHandler}
+                >
+                  Logout
                 </Link>
               </div>
             </div>
           ) : (
             !loading && (
-              <Link href="/login">
-                <a className="btn btn-danger px-4 text-white login-header-btn float-right">
-                  Login
-                </a>
+              <Link
+                href="/login"
+                className="btn btn-danger px-4 text-white login-header-btn float-right"
+              >
+                Login
               </Link>
             )
           )}

@@ -58,10 +58,11 @@ const AllRooms = () => {
           category: room.category,
           actions: (
             <>
-              <Link href={`/admin/rooms/${room._id}`}>
-                <a className="btn btn-primary">
-                  <i className="fa fa-pencil"></i>
-                </a>
+              <Link
+                href={`/admin/rooms/${room._id}`}
+                className="btn btn-primary"
+              >
+                <i className="fa fa-pencil"></i>
               </Link>
               <button
                 className="btn btn-danger mx-2"
@@ -88,10 +89,11 @@ const AllRooms = () => {
         <>
           <h1 className="my-5">
             {`${rooms && rooms.length} Rooms`}
-            <Link href="/admin/rooms/new">
-              <a className="mt-0 btn text-white float-right new-room-btn">
-                Create Room
-              </a>
+            <Link
+              href="/admin/rooms/new"
+              className="mt-0 btn text-white float-right new-room-btn"
+            >
+              Create Room
             </Link>
           </h1>
           <MDBDataTable
