@@ -1,7 +1,7 @@
 import React from "react";
 import AllUsers from "../../../components/admin/AllUsers";
 import Layout from "../../../components/layout/Layout";
-import { getSession } from "next-auth/client";
+import { getSession } from "next-auth/react";
 
 const AllUsersPage = () => {
   return (

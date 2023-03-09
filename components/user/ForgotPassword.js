@@ -52,7 +52,7 @@ const ForgotPassword = () => {
             id="forgot_password_button"
             type="submit"
             className="btn btn-block py-3"
-            disabled={loading ? true : false}
+            disabled={!email || loading ? true : false}
           >
             {loading ? <ButtonLoader /> : "Send Email"}
           </button>

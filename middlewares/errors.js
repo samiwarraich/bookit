@@ -1,6 +1,6 @@
 import ErrorHandler from "../utils/errorHandler";
 
-export default (err, req, res, next) => {
+const onError = (err, req, res, next) => {
   err.statusCode = err.statusCode || 500;
   let error = { ...err };
   error.message = err.message;
@@ -22,3 +22,5 @@ export default (err, req, res, next) => {
     stack: error.stack,
   });
 };
+
+export default onError;

@@ -71,7 +71,7 @@ const ResetPassword = () => {
             id="new_password_button"
             type="submit"
             className="btn btn-block py-3"
-            disabled={loading ? true : false}
+            disabled={!password || !confirmPassword || loading ? true : false}
           >
             {loading ? <ButtonLoader /> : "Set Password"}
           </button>

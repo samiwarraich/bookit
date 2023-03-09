@@ -51,7 +51,7 @@ export const getRooms =
     } catch (error) {
       dispatch({
         type: ALL_ROOMS_FAIL,
-        payload: error.response.data.message,
+        payload: error.response.data.message || error.message,
       });
     }
   };
@@ -75,7 +75,7 @@ export const getRoomDetails = (req, id) => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: ROOM_DETAILS_FAIL,
-      payload: error.response.data.message,
+      payload: error.response.data.message || error.message,
     });
   }
 };
@@ -92,7 +92,7 @@ export const getAdminRooms = () => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: ADMIN_ROOMS_FAIL,
-      payload: error.response.data.message,
+      payload: error.response.data.message || error.message,
     });
   }
 };
@@ -115,7 +115,7 @@ export const newRoom = (roomData) => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: NEW_ROOM_FAIL,
-      payload: error.response.data.message,
+      payload: error.response.data.message || error.message,
     });
   }
 };
@@ -138,7 +138,7 @@ export const updateRoom = (id, roomData) => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: UPDATE_ROOM_FAIL,
-      payload: error.response.data.message,
+      payload: error.response.data.message || error.message,
     });
   }
 };
@@ -155,7 +155,7 @@ export const deleteRoom = (id) => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: DELETE_ROOM_FAIL,
-      payload: error.response.data.message,
+      payload: error.response.data.message || error.message,
     });
   }
 };
@@ -178,7 +178,7 @@ export const newReview = (reviewData) => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: NEW_REVIEW_FAIL,
-      payload: error.response.data.message,
+      payload: error.response.data.message || error.message,
     });
   }
 };
@@ -198,7 +198,7 @@ export const checkReviewAvailability = (roomId) => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: REVIEW_AVAILABILITY_FAIL,
-      payload: error.response.data.message,
+      payload: error.response.data.message || error.message,
     });
   }
 };
@@ -216,7 +216,7 @@ export const getRoomReviews = (id) => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: GET_REVIEWS_FAIL,
-      payload: error.response.data.message,
+      payload: error.response.data.message || error.message,
     });
   }
 };
@@ -236,7 +236,7 @@ export const deleteReview = (id, roomId) => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: DELETE_REVIEW_FAIL,
-      payload: error.response.data.message,
+      payload: error.response.data.message || error.message,
     });
   }
 };

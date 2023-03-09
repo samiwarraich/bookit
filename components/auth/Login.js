@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import { signIn } from "next-auth/client";
+import { signIn } from "next-auth/react";
 import { toast } from "react-toastify";
 import ButtonLoader from "../layout/ButtonLoader";
 
@@ -59,13 +59,13 @@ const Login = () => {
               id="login_button"
               type="submit"
               className="btn btn-block py-3"
-              disabled={loading ? true : false}
+              disabled={!email || !password || loading ? true : false}
             >
               {loading ? <ButtonLoader /> : "LOGIN"}
             </button>
 
             <Link href="/register" className="float-right mt-2">
-              New User?
+              Register
             </Link>
           </form>
         </div>

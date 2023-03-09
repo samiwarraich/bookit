@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
-import { signOut } from "next-auth/client";
+import { signOut } from "next-auth/react";
 import { loadUser } from "../../redux/actions/userActions";
 
 const Header = () => {

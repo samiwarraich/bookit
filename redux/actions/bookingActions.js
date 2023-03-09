@@ -34,7 +34,7 @@ export const checkBooking =
     } catch (error) {
       dispatch({
         type: CHECK_BOOKING_FAIL,
-        payload: error.response.data.message,
+        payload: error.response.data.message || error.message,
       });
     }
   };
@@ -51,7 +51,7 @@ export const getBookedDates = (id) => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: BOOKED_DATES_FAIL,
-      payload: error.response.data.message,
+      payload: error.response.data.message || error.message,
     });
   }
 };
@@ -73,7 +73,7 @@ export const myBookings = (authCookie, req) => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: MY_BOOKINGS_FAIL,
-      payload: error.response.data.message,
+      payload: error.response.data.message || error.message,
     });
   }
 };
@@ -90,7 +90,7 @@ export const getAdminBookings = () => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: ADMIN_BOOKINGS_FAIL,
-      payload: error.response.data.message,
+      payload: error.response.data.message || error.message,
     });
   }
 };
@@ -107,7 +107,7 @@ export const deleteBooking = (id) => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: DELETE_BOOKING_FAIL,
-      payload: error.response.data.message,
+      payload: error.response.data.message || error.message,
     });
   }
 };
@@ -129,7 +129,7 @@ export const getBookingDetails = (authCookie, req, id) => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: BOOKING_DETAILS_FAIL,
-      payload: error.response.data.message,
+      payload: error.response.data.message || error.message,
     });
   }
 };

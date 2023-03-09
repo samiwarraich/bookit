@@ -14,13 +14,12 @@ const Register = () => {
     name: "",
     email: "",
     password: "",
+    avatar: "",
   });
-
-  const { name, email, password } = user;
-  const [avatar, setAvatar] = useState("");
   const [avatarPreview, setAvatarPreview] = useState(
     "/images/default_avatar.jpg"
   );
+  const { name, email, password, avatar } = user;
 
   const { success, error, loading } = useSelector((state) => state.auth);
 
@@ -50,7 +49,7 @@ const Register = () => {
       const reader = new FileReader();
       reader.onload = () => {
         if (reader.readyState === 2) {
-          setAvatar(reader.result);
+          setUser({ ...user, avatar: reader.result });
           setAvatarPreview(reader.result);
         }
       };
@@ -137,7 +136,15 @@ const Register = () => {
               id="login_button"
               type="submit"
               className="btn btn-block py-3"
-              disabled={loading ? true : false}
+              disabled={
+                loading ||
+                !user.name ||
+                !user.email ||
+                !user.password ||
+                !user.avatar
+                  ? true
+                  : false
+              }
             >
               {loading ? <ButtonLoader /> : "REGISTER"}
             </button>

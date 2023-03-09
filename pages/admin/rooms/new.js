@@ -1,7 +1,7 @@
 import React from "react";
 import NewRoom from "../../../components/admin/NewRoom";
 import Layout from "../../../components/layout/Layout";
-import { getSession } from "next-auth/client";
+import { getSession } from "next-auth/react";
 
 const NewRoomPage = () => {
   return (
