@@ -19,6 +19,7 @@ module.exports = {
     SMTP_FROM_EMAIL: process.env.SMTP_FROM_EMAIL,
 
     NEXTAUTH_URL: process.env.NEXTAUTH_URL,
+    NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
   },
   images: {
     domains: ["res.cloudinary.com"],
