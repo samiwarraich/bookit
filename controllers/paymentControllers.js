@@ -23,14 +23,20 @@ const stripeCheckoutSession = catchAsyncErrors(async (req, res) => {
     },
     line_items: [
       {
-        name: room.name,
-        images: [`${room.images[0].url}`],
-        amount: req.query.amount * 100,
-        currency: "usd",
+        price_data: {
+          unit_amount: req.query.amount * 100,
+          product_data: {
+            name: room.name,
+            images: [`${room.images[0].url}`],
+          },
+          currency: "usd",
+        },
         quantity: 1,
       },
     ],
+    mode: "payment",
   });
+  console.log({ session });
   res.status(200).json(session);
 });
 
