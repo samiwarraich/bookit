@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@stripe/stripe-js": "^1.52.1",
-    "@vercel/analytics": "^0.1.11",
+    "@vercel/analytics": "^1.0.0",
     "axios": "^1.3.6",
     "bcryptjs": "^2.4.3",
     "cloudinary": "^1.36.1",
