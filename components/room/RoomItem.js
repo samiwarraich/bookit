@@ -17,7 +17,7 @@ const RoomItem = ({ room }) => {
           alt={room.name}
           height={170}
           width={170}
-          priority
+          // priority
         />
         <div className="card-body d-flex flex-column">
           <h5 className="card-title">
