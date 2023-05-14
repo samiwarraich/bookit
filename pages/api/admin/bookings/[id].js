@@ -1,4 +1,4 @@
-import nc from "next-connect";
+import { createRouter } from "next-connect";
 import dbConnect from "../../../../config/dbConnect";
 import { deleteBooking } from "../../../../controllers/bookingControllers";
 import onError from "../../../../middlewares/errors";
@@ -7,10 +7,10 @@ import {
   authorizeRoles,
 } from "../../../../middlewares/auth";
 
-const handler = nc({ onError });
+const router = createRouter();
 
 dbConnect();
 
-handler.use(isAuthenticatedUser, authorizeRoles("admin")).delete(deleteBooking);
+router.use(isAuthenticatedUser, authorizeRoles("admin")).delete(deleteBooking);
 
-export default handler;
+export default router.handler({ onError });

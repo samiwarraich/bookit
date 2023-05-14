@@ -1,4 +1,4 @@
-import nc from "next-connect";
+import { createRouter } from "next-connect";
 import dbConnect from "../../../config/dbConnect";
 import {
   getSingleRoom,
@@ -8,12 +8,12 @@ import {
 import onError from "../../../middlewares/errors";
 import { isAuthenticatedUser, authorizeRoles } from "../../../middlewares/auth";
 
-const handler = nc({ onError });
+const router = createRouter();
 
 dbConnect();
 
-handler.get(getSingleRoom);
-handler.use(isAuthenticatedUser, authorizeRoles("admin")).put(updateRoom);
-handler.use(isAuthenticatedUser, authorizeRoles("admin")).delete(deleteRoom);
+router.get(getSingleRoom);
+router.use(isAuthenticatedUser, authorizeRoles("admin")).put(updateRoom);
+router.use(isAuthenticatedUser, authorizeRoles("admin")).delete(deleteRoom);
 
-export default handler;
+export default router.handler({ onError });

@@ -36,7 +36,6 @@ const stripeCheckoutSession = catchAsyncErrors(async (req, res) => {
     ],
     mode: "payment",
   });
-  console.log({ session });
   res.status(200).json(session);
 });
 
@@ -69,7 +68,7 @@ const webhookCheckout = catchAsyncErrors(async (req, res) => {
       const checkOutDate = session.metadata.checkOutDate;
       const daysOfStay = session.metadata.daysOfStay;
 
-      const booking = await Booking.create({
+      await Booking.create({
         room,
         user,
         checkInDate,

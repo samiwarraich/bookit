@@ -1,11 +1,9 @@
-import nc from "next-connect";
+import { createRouter } from "next-connect";
 import dbConnect from "../../config/dbConnect";
-
 import { webhookCheckout } from "../../controllers/paymentControllers";
-
 import onError from "../../middlewares/errors";
 
-const handler = nc({ onError });
+const router = createRouter();
 
 dbConnect();
 
@@ -15,6 +13,6 @@ export const config = {
   },
 };
 
-handler.post(webhookCheckout);
+router.post(webhookCheckout);
 
-export default handler;
+export default router.handler({ onError });

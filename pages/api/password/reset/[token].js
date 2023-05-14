@@ -1,14 +1,12 @@
-import nc from "next-connect";
+import { createRouter } from "next-connect";
 import dbConnect from "../../../../config/dbConnect";
-
 import { resetPassword } from "../../../../controllers/authControllers";
-
 import onError from "../../../../middlewares/errors";
 
-const handler = nc({ onError });
+const router = createRouter();
 
 dbConnect();
 
-handler.put(resetPassword);
+router.put(resetPassword);
 
-export default handler;
+export default router.handler({ onError });

@@ -10,7 +10,7 @@ const isAuthenticatedUser = catchAsyncErrors(async (req, res, next) => {
   }
 
   req.user = session.user;
-  next();
+  return next();
 });
 
 const authorizeRoles = (...roles) => {
@@ -23,7 +23,7 @@ const authorizeRoles = (...roles) => {
         )
       );
     }
-    next();
+    return next();
   };
 };
 

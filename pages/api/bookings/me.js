@@ -1,13 +1,13 @@
-import nc from "next-connect";
+import { createRouter } from "next-connect";
 import dbConnect from "../../../config/dbConnect";
 import { myBookings } from "../../../controllers/bookingControllers";
 import onError from "../../../middlewares/errors";
 import { isAuthenticatedUser } from "../../../middlewares/auth";
 
-const handler = nc({ onError });
+const router = createRouter();
 
 dbConnect();
 
-handler.use(isAuthenticatedUser).get(myBookings);
+router.use(isAuthenticatedUser).get(myBookings);
 
-export default handler;
+export default router.handler({ onError });

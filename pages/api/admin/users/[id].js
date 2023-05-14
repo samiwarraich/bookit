@@ -1,4 +1,4 @@
-import nc from "next-connect";
+import { createRouter } from "next-connect";
 import dbConnect from "../../../../config/dbConnect";
 import {
   getUserDetails,
@@ -11,12 +11,12 @@ import {
   authorizeRoles,
 } from "../../../../middlewares/auth";
 
-const handler = nc({ onError });
+const router = createRouter();
 
 dbConnect();
 
-handler.use(isAuthenticatedUser, authorizeRoles("admin")).get(getUserDetails);
-handler.use(isAuthenticatedUser, authorizeRoles("admin")).put(updateUser);
-handler.use(isAuthenticatedUser, authorizeRoles("admin")).delete(deleteUser);
+router.use(isAuthenticatedUser, authorizeRoles("admin")).get(getUserDetails);
+router.use(isAuthenticatedUser, authorizeRoles("admin")).put(updateUser);
+router.use(isAuthenticatedUser, authorizeRoles("admin")).delete(deleteUser);
 
-export default handler;
+export default router.handler({ onError });
