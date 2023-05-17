@@ -14,7 +14,7 @@
     "@vercel/analytics": "^1.0.1",
     "axios": "^1.4.0",
     "bcryptjs": "^2.4.3",
-    "cloudinary": "^1.36.4",
+    "cloudinary": "^1.37.0",
     "easyinvoice": "^3.0.7",
     "mdbreact": "^5.0.2",
     "moment": "^2.29.1",
