@@ -38,7 +38,7 @@
     "redux": "^4.1.0",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.3.0",
-    "stripe": "^12.7.0",
+    "stripe": "^12.8.0",
     "validator": "^13.9.0"
   },
   "devDependencies": {
