@@ -1147,18 +1147,6 @@ escape-string-regexp@^4.0.0:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
   integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
 
-escodegen@^1.8.1:
-  version "1.14.3"
-  resolved "https://registry.yarnpkg.com/escodegen/-/escodegen-1.14.3.tgz#4e7b81fba61581dc97582ed78cab7f0e8d63f503"
-  integrity sha512-qFcX0XJkdg+PB3xjZZG/wKSuT1PnQWx57+TVSjIMmILd2yC/6ByYElPwJnslDsuWuSAp4AwJGumarAAmJch5Kw==
-  dependencies:
-    esprima "^4.0.1"
-    estraverse "^4.2.0"
-    esutils "^2.0.2"
-    optionator "^0.8.1"
-  optionalDependencies:
-    source-map "~0.6.1"
-
 eslint-config-next@^13.4.8:
   version "13.4.8"
   resolved "https://registry.yarnpkg.com/eslint-config-next/-/eslint-config-next-13.4.8.tgz#f2683d278ae72f7cf8854d571b05cce3bfd84143"
@@ -3441,10 +3429,10 @@ strip-json-comments@^3.1.0, strip-json-comments@^3.1.1:
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-3.1.1.tgz#31f1281b3832630434831c310c01cccda8cbe006"
   integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
 
-stripe@^12.11.0:
-  version "12.11.0"
-  resolved "https://registry.yarnpkg.com/stripe/-/stripe-12.11.0.tgz#a074f17bbc79f81375a1d56a5dc65cdbc882a222"
-  integrity sha512-nyVumI9TXqr+B32397lLHF8VPbTWNvCF/rdY6oLXHLZr+7S8q2PJzo2TUvfowD0eSNz5Hz0O0I2kw9Qb2EyGQA==
+stripe@^12.12.0:
+  version "12.12.0"
+  resolved "https://registry.yarnpkg.com/stripe/-/stripe-12.12.0.tgz#29d38a893133e36810cff668002103426258ae2f"
+  integrity sha512-aM9xfyDryiaf/qSWMtJaTMrlc/he3qyx3aVHMqOZqUiMdgTV6lt7tLpFrU0pG+QURm1LAP9GYZ+EcA17446YoQ==
   dependencies:
     "@types/node" ">=8.1.0"
     qs "^6.11.0"
