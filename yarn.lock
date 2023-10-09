@@ -264,10 +264,10 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.4.0.tgz#77e948b9760bd22736a5d26e335a690f76fda37b"
   integrity sha512-cEjvTPU32OM9lUFegJagO0mRnIn+rbqrG89vV8/xLnLFX0DoR0r1oy5IlTga71Q7uT3Qus7qm7wgeiMT/+Irlg==
 
-"@stripe/stripe-js@^2.1.6":
-  version "2.1.6"
-  resolved "https://registry.yarnpkg.com/@stripe/stripe-js/-/stripe-js-2.1.6.tgz#569b4257564a151744205e6e12037e4103de17b2"
-  integrity sha512-QSzqQIcowgap7a40f3a7oUR+59Xet/i8fp1EsnzzwxK5oPRQsCbbLQ4Cd6qM0y1pdZMonFnCrAWayWdE9Lr0iA==
+"@stripe/stripe-js@^2.1.7":
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/@stripe/stripe-js/-/stripe-js-2.1.7.tgz#9ce9be34ba7f778c626710d6a12171e364a927ba"
+  integrity sha512-oI620ARpFp5jCXfwIYMxyBJmtTFuAjSA8x3k3JgW1M6cvLmw9XgmNcGNegQWmirpozhFNflxrZEgp10og+6MSA==
 
 "@swc/helpers@0.5.2":
   version "0.5.2"
