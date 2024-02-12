@@ -27,7 +27,7 @@
     "next-auth": "^4.24.5",
     "next-connect": "^1.0.0",
     "next-redux-wrapper": "^6.0.2",
-    "nodemailer": "^6.9.7",
+    "nodemailer": "^6.9.9",
     "raw-body": "^2.5.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.1",
