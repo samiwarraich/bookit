@@ -10,7 +10,7 @@
     "seeder": "node -r dotenv/config utils/seeder"
   },
   "dependencies": {
-    "@stripe/stripe-js": "^2.2.2",
+    "@stripe/stripe-js": "^3.0.4",
     "@vercel/analytics": "^1.0.2",
     "axios": "^1.6.2",
     "bcryptjs": "^2.4.3",
