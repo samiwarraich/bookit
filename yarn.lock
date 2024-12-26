@@ -2544,10 +2544,10 @@ mongoose-timezone@^1.3.0:
     lodash.set "^4.3.2"
     moment-timezone "^0.5.26"
 
-mongoose@^5.13.21:
-  version "5.13.21"
-  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.13.21.tgz#32ef5a444a744945d7fd08ea7eaccbc208b6e01d"
-  integrity sha512-EvSrXrCBogenxY131qKasFcT1Pj+9Pg5AXj17vQ8S1mOEArK3CpOx965u1wTIrdnQ7DjFC+SRwPxNcqUjMAVyQ==
+mongoose@^5.13.23:
+  version "5.13.23"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.13.23.tgz#befbe2f82247b0057c145900be871f37147d7f27"
+  integrity sha512-Q5bo1yYOcH2wbBPP4tGmcY5VKsFkQcjUDh66YjrbneAFB3vNKQwLvteRFLuLiU17rA5SDl3UMcMJLD9VS8ng2Q==
   dependencies:
     "@types/bson" "1.x || 4.0.x"
     "@types/mongodb" "^3.5.27"
