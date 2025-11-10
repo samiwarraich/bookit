@@ -13,7 +13,7 @@
     "@stripe/stripe-js": "^2.2.2",
     "@vercel/analytics": "^1.0.2",
     "axios": "^1.6.2",
-    "bcryptjs": "^2.4.3",
+    "bcryptjs": "^3.0.3",
     "cloudinary": "^1.41.1",
     "dotenv": "^16.3.1",
     "easyinvoice": "^3.0.7",
