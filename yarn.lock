@@ -2680,10 +2680,10 @@ node-fetch@^1.0.1:
     encoding "^0.1.11"
     is-stream "^1.0.1"
 
-nodemailer@^6.9.7:
-  version "6.9.7"
-  resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-6.9.7.tgz#ec2f488f62ba1558e7b19239b62778df4a5c4397"
-  integrity sha512-rUtR77ksqex/eZRLmQ21LKVH5nAAsVicAtAYudK7JgwenEDZ0UIQ1adUGqErz7sMkWYxWTTU1aeP2Jga6WQyJw==
+nodemailer@^10.6.0:
+  version "10.6.0"
+  resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-10.6.0.tgz#641f15ef6ddba543e1a41f255b83dd45c62e072c"
+  integrity sha512-jWanL7D9GD3jvUDYKmoC5rWTiG8MnBgnN2yV68bgMKip1zUJhiSTyz7Eg+18y8sk5OvdVDzws5nZK5arSI4f5Q==
 
 normalize-scroll-left@^0.1.2:
   version "0.1.2"
